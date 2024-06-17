@@ -67,6 +67,10 @@
             spaceBetween: 0,
             speed: 800,
             effect: "fade",
+            autoplay: {
+                delay: 3e3,
+                disableOnInteraction: false
+            },
             pagination: {
                 el: ".hero-pagination",
                 clickable: true,
