@@ -1,3 +1,87 @@
 //====================================================================================================
+.hero {
+    margin-top: 37px;
+    // .hero__container
+    &__container {
+    }
+    // .hero__slider
+    &__slider {
+        position: relative;
+    }
+    // .hero__wrapper
+    &__wrapper {
+    }
+    // .hero__slide
+    &__slide {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        background-color: #fff;
+        gap: 20px;
+        @media (max-width:$mobile){
+            padding-top: 150px;
+            display: flex;flex-direction: column;
+        }
+    }
+    // .hero__content
+    &__content {
+        max-width: 772px;
+    }
+    // .hero__title
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 100%;
+        letter-spacing: 0.07em;
+        color: var(--black-1);
+        margin-bottom: 22px;
+        @media (max-width:$mobile){
+             font-size: 64px; 
+        }
+    }
+    // .hero__text
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 24px;
+        letter-spacing: 0.07em;
+        color: var(--black-1);
+        margin-bottom: 60px;
+        max-width: 645px;
+    }
+    // .hero__btn
+    &__btn {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 0.07em;
+        color: var(--black-1);
+        display: inline-flex;
+        padding: 25px 89px 26px 90px;
+        border: 1px solid var(--black-1);
+        background-color: var(--white);
+    }
+    // .hero__image
+    &__image {
+        background: url('@img/hero-img-bg.svg') center center no-repeat;
+        @media (min-width:$mobile){
+            margin-right: 136px; 
+        }
+    }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.hero-pagination {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 82px;
+    right: 0;
+}
 
 //====================================================================================================
