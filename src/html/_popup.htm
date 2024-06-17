@@ -1,10 +1,78 @@
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрити</button>
-			<div class="popup__text">
-				Text
+<div class="search search-modal">
+    <div class="search-modal__wrapper">
+        <div class="search-modal-close">
+			<svg width="22" height="25">
+				<use xlink:href="img/icons/icons.svg#close"></use>
+			</svg>
+		</div>
+        <form action="" method=""class="search__header">
+			<button type="button" class="search__button">
+				<svg width="22" height="25">
+					<use xlink:href="img/icons/icons.svg#glass"></use>
+				</svg>
+			</button>
+			<input type="text" placeholder="Type text" class="search__input">
+		</form>
+        <div class="search__body">
+			<div class="search__text">Возможно вы ищите:</div>
+			<div class="search__items">
 			</div>
 		</div>
-	</div>
+    </div>
+</div>
+
+
+<div class="login login-modal">
+    <div class="login-modal__wrapper">
+        <div class="login-modal-close">
+			<svg width="22" height="25">
+				<use xlink:href="img/icons/icons.svg#close"></use>
+			</svg>
+		</div>
+		<div class="login__body tabs">
+			<div class="login__header tabs__header">
+				<div class="login__header-item tabs__header-item active">ЛОГИН</div>
+				<div class="login__header-item tabs__header-item">РЕГИСТРАЦИЯ</div>
+			</div>
+			<div class="login__content tabs__content">
+				<div class="tabs__content-item">
+					<form action="" method="" class="login__form">
+						<input type="email" name="" data-error="*некорректно введенные данные" placeholder="Введите email" class="login__input input">
+						<input type="password" name="" data-error="*некорректно введенные данные" placeholder="Введите пароль" class="login__input input">
+						<button type="button" class="login__button button">ВОЙТИ</button>
+						<div class="btn-reset-modal">
+							Забыли пароль?
+						</div>
+					</form>
+				</div>
+				<div class="tabs__content-item">
+					<form action="" method="" class="login__form">
+						<input type="text" name="" data-error="*некорректно введенные данные" placeholder="Введите имя" class="login__input input">
+						<input type="text" name="" data-error="*некорректно введенные данные" placeholder="Ваш Город" class="login__input input">
+						<input type="tel" name="" data-error="*некорректно введенные данные" placeholder="Введите телефон" class="login__input input">
+						<input type="email" name="" data-error="*некорректно введенные данные" placeholder="Введите email" class="login__input input">
+						<input type="password" name="" data-error="*некорректно введенные данные" placeholder="Введите пароль" class="login__input input">
+						<input type="password" name="" data-error="*некорректно введенные данные" placeholder="Подтвердите  пароль" class="login__input input">
+						<button type="button" class="login__button button">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+					</form>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+<div class="reset-pass reset-pass-modal">
+    <div class="reset-pass__wrapper">
+        <div class="reset-pass__modal-close">
+			<svg width="22" height="25">
+				<use xlink:href="img/icons/icons.svg#close"></use>
+			</svg>
+		</div>
+        <div class="reset-pass__body">
+			<form action="" method="" class="reset-pass__form">
+				<input type="email" name="" data-error="*некорректно введенные данные" placeholder="Введите email" class="reset-pass__input input">
+				<button type="button" class="reset-pass__button button">ВОССТАНОВИТЬ</button>
+			</form>
+		</div>
+    </div>
 </div>

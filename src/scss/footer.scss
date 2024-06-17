@@ -49,6 +49,7 @@
             row-gap: 26px;
             @media (max-width:$mobile){
                 justify-content: flex-start; 
+                flex-direction: column;
             }
         }
         // .footer__column_item

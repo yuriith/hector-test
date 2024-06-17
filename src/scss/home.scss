@@ -18,9 +18,10 @@
         align-items: center;
         background-color: #fff;
         gap: 20px;
-        @media (max-width:$mobile){
+        @media (max-width:$tablet){
             padding-top: 150px;
-            display: flex;flex-direction: column;
+            display: flex;
+            flex-direction: column;
         }
     }
     // .hero__content
@@ -70,12 +71,6 @@
         }
     }
 }
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
 .hero-pagination {
     display: flex;
     flex-direction: column;
@@ -85,3 +80,153 @@
 }
 
 //====================================================================================================
+.news {
+    background: #f5f5f5;
+    padding-top: 29px;
+    padding-bottom: 36px;
+    // .news__container
+    &__container {
+    }
+    // .news__list
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        @media (max-width:$pc){
+            grid-template-columns: repeat(2, 1fr); 
+        }
+        @media (max-width:$tablet){
+            grid-template-columns: auto;
+        }
+        align-items: center;
+        gap: 40px;
+    }
+    // .news__item
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--white);
+    }
+    // .news__image
+    &__image {
+    }
+    // .news__content
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 48px 15px 48px 15px;
+    }
+    // .news__title
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 0.07em;
+        color: var(--black-1);
+    }
+    // .news__text
+    &__text {
+        font-family: var(--font-family);
+        font-weight: 300;
+        font-size: 16px;
+        letter-spacing: 0.07em;
+        color: var(--black-1);
+    }
+}
+//========================================================================================================================================================
+.banner {
+    padding-top: 69px;
+    padding-bottom: 69px;
+    // .banner__container
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 60px;
+        row-gap: 20px;
+    }
+    // .banner__left
+    &__left {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 0.07em;
+        color: var(--black-1);
+        max-width: 615px;
+    }
+    // .banner__right
+    &__right {
+        display: flex;
+        align-items: center;
+        column-gap: 50px;
+        row-gap: 20px;
+        @media (max-width:$tablet){
+            column-gap: 30px;
+        }
+    }
+    // .banner__form
+    &__form {
+        display: flex;
+        align-items: center;
+        // .banner__form_input
+        &_input {
+            position: relative;
+            border: 2px solid #bfbfbf;
+            border-right: 0;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 24px;
+            letter-spacing: 0.07em;
+            color: var(--grey-2);
+            padding: 20px 20px 21px 66px;
+            svg {
+                position: absolute;
+                top: 35px;
+                left: 30px;
+                transform: translate(-50%, -50%);
+            }
+        }
+        // .banner__form_button
+        &_button {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 0.07em;
+            color: var(--white);
+            padding: 28px 108px;
+            background: var(--black-1);
+            @media (max-width:$tablet){
+                 padding: 28px 50px; 
+            }
+        }
+    }
+    // .banner__social
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        // .banner__social_link
+        &_link {
+        }
+    }
+}
+//========================================================================================================================================================
+.products {
+    // .products__container
+    &__container {
+    }
+    // .products__header
+    &__header {
+    }
+    // .products__header-item
+    &__header-item {
+    }
+    // .products__conent
+    &__conent {
+    }
+    // .products__content-item
+    &__content-item {
+    }
+}
+//========================================================================================================================================================
